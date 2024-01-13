@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title-font{
+  color: blue;
+}
+.coffee_type{
+  color: black;
+}
