@@ -1,6 +1,6 @@
 import React from "react";
 import { SiCoffeescript } from "react-icons/si";
-import { SiBuymeacoffee } from "react-icons/si";
+import { FaSearch } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -21,10 +21,14 @@ const Header = () => {
           <a className="mr-5 hover:text-green-500">Coffee Menu</a>
           <a className="mr-5 hover:text-green-500">Contact</a>
         </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-500 rounded text-base mt-4 md:mt-0">
-          Coffee Order
-          <SiBuymeacoffee style={{ fontSize: "20px", marginLeft: "10px" }} />
-        </button>
+        <div className="wrap">
+          <div className="search">
+            <input type="text" className="searchTerm" placeholder="Search" />
+            <button type="submit" className="searchButton">
+              <FaSearch style={{ marginLeft: "6px" }} />
+            </button>
+          </div>
+        </div>
       </div>
     </header>
   );
